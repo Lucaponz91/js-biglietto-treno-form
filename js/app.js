@@ -12,6 +12,9 @@ buttonElement.addEventListener('click', function () {
     const inputDist = document.querySelector('input[name="distanza"]');
     console.log(inputDist)
     const prezzoBase = parseFloat(inputDist.value) * 0.21
+    if (isNaN(prezzoBase)){
+        alert('Inserisci un NUMERO di km')
+    }
     console.log(prezzoBase)
     const inputAge = document.querySelector('select[name="age"]');
     console.log(inputAge)
