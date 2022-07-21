@@ -17,6 +17,7 @@ buttonElement.addEventListener('click', function () {
     console.log(inputAge)
     const discount = parseFloat(inputAge.value)
     console.log(discount)
-// const inputDistance
+    const userPrice = document.getElementById('costo')
+    userPrice.innerHTML = (prezzoBase - (prezzoBase * discount))
 }
 )
