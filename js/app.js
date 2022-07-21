@@ -18,6 +18,8 @@ buttonElement.addEventListener('click', function () {
     const discount = parseFloat(inputAge.value)
     console.log(discount)
     const userPrice = document.getElementById('costo')
-    userPrice.innerHTML = (prezzoBase - (prezzoBase * discount))
+    const price = (prezzoBase - (prezzoBase * discount))
+    const roundedPrice = price.toFixed(2)
+    userPrice.innerHTML = roundedPrice;
 }
 )
